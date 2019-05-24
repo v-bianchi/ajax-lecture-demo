@@ -1,0 +1,17 @@
+<% if @review.persisted? %>
+
+  // 1. Select the reviews list element
+  reviewList = document.getElementById('reviews');
+  // 2. Insert new review in the list
+  reviewHTML = "<%= j render 'reviews/show', review: @review %>"
+  reviewList.insertAdjacentHTML('beforeend', reviewHTML)
+  // 3. clear input
+  input = document.getElementById('review_content');
+  input.value = '';
+
+<% else %>
+  // 1. select form
+  form = document.getElementById('new_review')
+  // 2. re-render form
+  form.innerHTML = "<%= j render 'reviews/form', review: @review, restaurant: @restaurant %>"
+<% end %>
