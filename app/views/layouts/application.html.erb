@@ -10,7 +10,13 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= yield %>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-8 col-offset-2">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
