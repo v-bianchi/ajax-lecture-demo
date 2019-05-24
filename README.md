@@ -1,1 +1,9 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+AJAX: Asynchronous Javascript and XML
+
+
+TRADITIONAL HTTP REQUESTS
+Accept an HTML document as a response and the browser renders the whole thing from scratch
+
+
+AJAX REQUESTS
+Accept a chunk of Javascript code as a response and the browser runs it
